@@ -9,11 +9,15 @@ It is a simple application built using Python and Tkinter library that allows us
 - Scheduling: Blocking and unblocking of websites can be scheduled to occur only during specific hours, providing flexibility and control over website access.
 - Improved GUI: The graphical user interface (GUI) has been enhanced with a cleaner and more visually appealing design, making it easy to use and navigate.
 
-## Installation
-1. Clone the repository or download the source code files.
-2. Make sure you have Python installed on your system.
-3. Install the required dependencies by running `pip install tkinter`.
-4. Run the `website_blocker.py` script to launch the application.
+##Installation
+Clone the repository:
+git clone https://github.com/your_username/website-blocker.git
+Navigate to the project directory:
+cd website-blocker
+Install the required dependencies:
+pip install -r requirements.txt
+Run the application:
+python blocker.py
 
 ## Usage
 1. Launch the application by running the `website_blocker.py` script.
