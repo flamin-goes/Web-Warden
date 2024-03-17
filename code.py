@@ -73,16 +73,9 @@ def block(win):
 
     Label(block_option_frame, text='Select Blocking Option:', background='#4CAF50', font=('Arial', 12), fg="white").pack(side=LEFT, padx=10, pady=5)
     block_option_var = StringVar(block_option_frame)
-    block_option_var.set("Always")  # Default option
+    block_option_var.set("Schedule")  # Default option
     block_options = ["Always", "Schedule", "User Specific"]
     OptionMenu(block_option_frame, block_option_var, *block_options, command=toggle_end_time_entry).pack(side=LEFT, padx=5, pady=5)
-
-    websites_frame = Frame(blck_wn, background='#4CAF50')
-    websites_frame.pack()
-
-    Label(websites_frame, text='Enter the URLs (www.example.com):', background='#4CAF50', font=('Arial', 12), fg="white").pack(side=LEFT, padx=10, pady=5)
-    websites_entry = Text(websites_frame, width=35, height=4)
-    websites_entry.pack(side=LEFT, padx=5, pady=5)
 
     global end_time_frame
     end_time_frame = Frame(blck_wn, background='#4CAF50')
@@ -93,12 +86,21 @@ def block(win):
     end_time_entry.pack(side=LEFT, padx=5, pady=5)
     end_time_frame.pack_forget()  # Initially hide the end time entry
 
+    websites_frame = Frame(blck_wn, background='#4CAF50')
+    websites_frame.pack()
+
+    Label(websites_frame, text='Enter the URLs (www.example.com):', background='#4CAF50', font=('Arial', 12), fg="white").pack(side=TOP)
+    websites_entry = Text(websites_frame, width=35, height=4)
+    websites_entry.pack(side=LEFT, padx=5, pady=5)
+
+
     submit_btn = Button(blck_wn, text='Submit', bg='#1976D2', fg="white", font=('Arial', 12, 'bold'), command=block_websites)
     submit_btn.pack(pady=10)
 
 def toggle_end_time_entry(selection):
     if selection == "User Specific":
-        end_time_frame.pack()
+        Label(end_time_frame, text=': specific end time', background='#4CAF50', font=('Arial', 12), fg="white").pack(side=TOP)
+        end_time_frame.pack(side=TOP, padx=5, pady=5)
     else:
         end_time_frame.pack_forget()
 
