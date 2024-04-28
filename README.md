@@ -1,8 +1,8 @@
-# Website Blocker
+# Web-Warden
 
 ## Overview
 
-The Website Blocker is a simple tool that allows users to block access to specific websites by manipulating the system's host file. It provides users with the ability to block and unblock websites, either permanently or during specific times.
+The Web-Warden is a simple website blocking tool that allows users to block access to specific websites by manipulating the system's host file. It provides users with the ability to block and unblock websites, either permanently or during specific times.
 
 ## Features
 
@@ -18,11 +18,11 @@ The Website Blocker is a simple tool that allows users to block access to specif
 
 1. **Install Python**: If you haven't already, you can download and install Python from the official [Python website](https://www.python.org/). Make sure to check the option to add Python to your system's PATH during installation.
 
-2. **Download the Script**: Download the `website_blocker.py` file from this repository.
+2. **Download the Script**: Download the `web-warden.py` file from this repository.
 
 3. **Run the Script**:
    - Open a terminal or command prompt.
-   - Navigate to the directory where the `website_blocker.py` file is located. 
+   - Navigate to the directory where the `web-warden.py` file is located. 
    - Run the script using the command:
      ```
      python website_blocker.py
