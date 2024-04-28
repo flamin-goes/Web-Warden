@@ -25,7 +25,7 @@ The Web-Warden is a simple website blocking tool that allows users to block acce
    - Navigate to the directory where the `web-warden.py` file is located. 
    - Run the script using the command:
      ```
-     python website_blocker.py
+     python web-warden.py
      ```
 
 4. **Using the Application**:
